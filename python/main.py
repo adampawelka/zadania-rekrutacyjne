@@ -38,7 +38,7 @@ obiekty_z_wartosciami.sort(key=lambda x: x[1], reverse=True)
 najlepsze = obiekty_z_wartosciami[:5]
 
 print("5 danych o największej wartości na jednostkę:\n")
-print(f"{'Lp.':<5} {'Typ':<10} {'Masa':<10} {'Czystość':<12} {'Wartość (USD)':<15} {'Barwa':<15} {'Pochodzenie':<15} {'Właściciel':<30} {'Wartość posiadana (USD)':<20}")
+print(f"{'':<5} {'Typ':<10} {'Masa':<10} {'Czystość':<12} {'Wartość (USD)':<15} {'Barwa':<15} {'Pochodzenie':<15} {'Właściciel':<30} {'Wartość posiadana (USD)':<20}")
 print('-' * 150)
 for i, element in enumerate(najlepsze, start=1):
     obiekt = element[0]
@@ -46,7 +46,7 @@ for i, element in enumerate(najlepsze, start=1):
     wartosc_wlasciciela = element[2]
 
     print(f"{i:<5} {obiekt['Typ']:<10} {obiekt['Masa']:<10} {obiekt['Czystość']:<12} "
-          f"{wartosc_za_uncje:<15} USD {obiekt['Barwa']:<15} {obiekt['Pochodzenie']:<15} "
+          f"{wartosc_za_uncje:<15} {obiekt['Barwa']:<15} {obiekt['Pochodzenie']:<15} "
           f"{obiekt['Właściciel']:<30} {wartosc_wlasciciela:<20}")
 
 print('-' * 150)
