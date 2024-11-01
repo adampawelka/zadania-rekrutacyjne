@@ -1,6 +1,8 @@
 # Z podanego zbioru danych wyselekcjonuj 5 o największej wartości na jednostkę, znając kategorię obiektu
 # Dane znajdują się w folderze "dane" w pliku "zbiór_wejściowy.json" oraz "kategorie.json"
 # Wynik przedstaw w czytelnej formie na standardowym wyjściu
+# Polecenie rozumiem jako wypisanie ze zbioru wejściowego informacji o 5 najdroższych surowcach za jednostkę (uncję),
+# bo zastanawiałem się także nad interpretacją z największą wartością posiadanego surowca przez danego właściciela
 import json
 
 with open("dane/zbiór_wejściowy.json", "r") as file:
